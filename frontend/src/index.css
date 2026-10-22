@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/600.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+
+@theme {
+  --color-primary: #0B5563;
+  --color-bg: #F7F9FA;
+  --color-surface: #FFFFFF;
+  --color-ink: #0F1B20;
+  --color-muted: #4A5A62;
+  --color-line: #D5DDE1;
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --radius-card: 8px;
+}
+
+html { background: var(--color-bg); color: var(--color-ink); font-family: var(--font-sans); }
+body { margin: 0; overflow-x: hidden; }
+:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+button, input, select, textarea { font: inherit; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+@keyframes pulse-bg { 50% { opacity: .5; } }
+.skeleton { background: var(--color-line); border-radius: 8px; animation: pulse-bg 1.4s ease-in-out infinite; }

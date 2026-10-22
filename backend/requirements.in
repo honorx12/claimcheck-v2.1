@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+pydantic-settings
+psycopg[binary,pool]
+PyJWT[crypto]
+boto3
+httpx
+pymupdf
+pytesseract
+pillow
+fastembed
